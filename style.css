@@ -15,7 +15,8 @@ body {
 }
 
 .background {
-  width: 1440px;
+  width: 100%; /* Ubah lebar menjadi 100% untuk responsif */
+  max-width: 1440px; /* Maksimal lebar */
   background-color: hsl(330, 100%, 98%); /* Rose 50 */
   display: flex;
   justify-content: center;
@@ -23,14 +24,14 @@ body {
 }
 
 .container {
-  width: 720px; /* Setengah dari 1440px */
+  width: 100%; /* Ubah lebar menjadi 100% untuk responsif */
+  max-width: 720px; /* Maksimal lebar */
   background-color: hsl(0, 0%, 100%);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  /* margin-top: 50px; Ubah nilai ini sesuai kebutuhan */
 }
 
 .container img {
@@ -43,18 +44,16 @@ body {
 .container h1,
 .container p {
   text-align: left; /* Menyelaraskan teks di sebelah kiri */
-  margin-right: auto; /* Memastikan teks tetap di sisi kiri */
 }
 
 .container h1 {
   margin-top: 20px;
-  font-size: 24px;
-  font-weight: bold;
+  font-size: 24px; /* Ukuran font judul */
 }
 
 .container p {
   margin-top: 10px;
-  font-size: 16px;
+  font-size: 16px; /* Ukuran font paragraf */
   line-height: 1.5;
 }
 
@@ -62,6 +61,7 @@ body {
   background-color: rgb(250, 241, 242);
   margin-top: 20px;
 }
+
 .Container-2 h1 {
   padding: 10px;
   color: hsl(332, 51%, 32%);
@@ -84,21 +84,26 @@ body {
   margin-right: 10px;
   color: #000; /* Anda bisa mengubah warna ini sesuai kebutuhan */
 }
+
 .Container-3 {
   border-bottom: 1px solid #e0e0e0; /* Garis tipis di bawah Container-3 */
   padding-bottom: 20px; /* Ruang di bawah konten Container-3 sebelum garis */
-  margin-bottom: 20px; /*Ruang di bawah garis sebelum container*/
+  margin-bottom: 20px; /* Ruang di bawah garis sebelum container */
 }
+
 .Container-3 h1 {
   padding-bottom: 10px;
   color: hsl(332, 51%, 32%);
 }
+
 .daftar-persiapan-2 {
   padding-left: 20px;
 }
+
 .daftar-persiapan-2 li {
   margin-bottom: 10px;
 }
+
 .container-4 {
   margin-top: -10px; /* Sesuaikan jarak dari elemen sebelumnya */
 }
@@ -107,6 +112,7 @@ body {
   margin-bottom: 10px; /* Jarak antara judul dan daftar */
   color: hsl(332, 51%, 32%);
 }
+
 .Container-5 h1 {
   color: hsl(332, 51%, 32%);
 }
@@ -118,6 +124,7 @@ body {
 .instruksi-list li {
   margin-bottom: 10px; /* Jarak antar item daftar */
 }
+
 .table-container {
   display: table;
   width: 100%;
@@ -138,4 +145,47 @@ body {
 /* Tambahkan gaya tambahan jika perlu */
 .table-cell:first-child {
   font-weight: bold; /* Menebalkan kolom pertama */
+}
+
+/* Media Query untuk Responsif di ukuran ponsel */
+@media (max-width: 375px) {
+  body {
+    padding-top: 20px; /* Kurangi padding atas di body */
+  }
+
+  .background {
+    padding: 10px; /* Kurangi padding di background */
+  }
+
+  .container {
+    padding: 15px; /* Kurangi padding dalam container */
+  }
+
+  .container h1 {
+    font-size: 20px; /* Ukuran font judul lebih kecil */
+    margin-top: 10px; /* Mengurangi margin atas */
+  }
+
+  .container p {
+    font-size: 14px; /* Ukuran font paragraf lebih kecil */
+  }
+
+  .table-cell {
+    padding: 8px; /* Kurangi padding sel tabel */
+    font-size: 12px; /* Ukuran font untuk tabel */
+  }
+
+  .table-cell:first-child {
+    font-size: 12px; /* Ukuran font kolom pertama lebih kecil */
+  }
+
+  .daftar-persiapan li {
+    font-size: 14px; /* Ukuran font untuk daftar persiapan */
+  }
+
+  .Container-2 h1,
+  .Container-3 h1,
+  .container-4 h1 {
+    font-size: 18px; /* Ukuran font judul di Container-2, Container-3, dan container-4 */
+  }
 }
