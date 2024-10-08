@@ -84,7 +84,9 @@ body {
   color: #000; /* Anda bisa mengubah warna ini sesuai kebutuhan */
 }
 .Container-3 {
-  margin-bottom: 10px;
+  border-bottom: 1px solid #e0e0e0; /* Garis tipis di bawah Container-3 */
+  padding-bottom: 20px; /* Ruang di bawah konten Container-3 sebelum garis */
+  margin-bottom: 20px; Ruang di bawah garis sebelum container-4
 }
 .Container-3 h1 {
   padding-bottom: 10px;
@@ -94,4 +96,19 @@ body {
 }
 .daftar-persiapan-2 li {
   margin-bottom: 10px;
+}
+.container-4 {
+  margin-top: -10px; /* Sesuaikan jarak dari elemen sebelumnya */
+}
+
+.container-4 h1 {
+  margin-bottom: 10px; /* Jarak antara judul dan daftar */
+}
+
+.instruksi-list {
+  padding-left: 20px; /* Memberikan ruang untuk nomor */
+}
+
+.instruksi-list li {
+  margin-bottom: 10px; /* Jarak antar item daftar */
 }
