@@ -86,7 +86,7 @@ body {
 .Container-3 {
   border-bottom: 1px solid #e0e0e0; /* Garis tipis di bawah Container-3 */
   padding-bottom: 20px; /* Ruang di bawah konten Container-3 sebelum garis */
-  margin-bottom: 20px; Ruang di bawah garis sebelum container-4
+  margin-bottom: 20px; /*Ruang di bawah garis sebelum container*/
 }
 .Container-3 h1 {
   padding-bottom: 10px;
@@ -111,4 +111,24 @@ body {
 
 .instruksi-list li {
   margin-bottom: 10px; /* Jarak antar item daftar */
+}
+.table-container {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-row {
+  display: table-row;
+}
+
+.table-cell {
+  display: table-cell;
+  padding: 10px;
+  border-bottom: 1px solid #ccc; /* Garis bawah untuk setiap sel */
+}
+
+/* Tambahkan gaya tambahan jika perlu */
+.table-cell:first-child {
+  font-weight: bold; /* Menebalkan kolom pertama */
 }
