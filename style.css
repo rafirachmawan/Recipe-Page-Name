@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Ubah dari center ke flex-start */
+  min-height: 100vh; /* Ubah height menjadi min-height */
+  background-color: hsl(330, 100%, 98%); /* Rose 50 */
+  font-family: Arial, sans-serif;
+  padding-top: 50px; /* Tambahkan padding di atas body */
+}
+
+.background {
+  width: 1440px;
+  background-color: hsl(330, 100%, 98%); /* Rose 50 */
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.container {
+  width: 720px; /* Setengah dari 1440px */
+  background-color: hsl(0, 0%, 100%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 50px; Ubah nilai ini sesuai kebutuhan */
+}
+
+.container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px 10px 0 0;
+}
+
+/* Menata teks ke sisi kiri */
+.container h1,
+.container p {
+  text-align: left; /* Menyelaraskan teks di sebelah kiri */
+  margin-right: auto; /* Memastikan teks tetap di sisi kiri */
+}
+
+.container h1 {
+  margin-top: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.container p {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.Container-2 {
+  background-color: rgb(250, 241, 242);
+  margin-top: 20px;
+}
+.Container-2 h1 {
+  padding: 10px;
+}
+
+.daftar-persiapan {
+  list-style-type: none;
+  padding-left: 10px;
+}
+
+.daftar-persiapan li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.daftar-persiapan li::before {
+  content: "•";
+  font-size: 1.5em;
+  margin-right: 10px;
+  color: #000; /* Anda bisa mengubah warna ini sesuai kebutuhan */
+}
+.Container-3 {
+  margin-bottom: 10px;
+}
+.Container-3 h1 {
+  padding-bottom: 10px;
+}
+.daftar-persiapan-2 {
+  padding-left: 20px;
+}
+.daftar-persiapan-2 li {
+  margin-bottom: 10px;
+}
