@@ -125,21 +125,22 @@ body {
   margin-bottom: 20px; /* Jarak antar item daftar */
 }
 
-.table-container {
+table {
   display: table;
   width: 100%;
   border-collapse: collapse;
   margin-top: 20px;
 }
 
-.table-row {
+/* .table-row {
   display: table-row;
-}
+} */
 
 .table-cell {
   display: table-cell;
   padding: 10px;
   border-bottom: 1px solid #ccc; /* Garis bawah untuk setiap sel */
+  text-align: left;
 }
 
 /* Tambahkan gaya tambahan jika perlu */
